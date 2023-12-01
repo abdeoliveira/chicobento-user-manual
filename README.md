@@ -22,7 +22,7 @@ um `node` genérico.
 
 ## Quota em disco
 
-Todos os usuários iniciam com uma cota em disco inicial de `100 Gb` para o `/home`, com uma período de `7 dias` flexíveis (*grace period*) com ``150 Gb`. 
+Todos os usuários iniciam com uma cota em disco inicial de `100 Gb` para o `/home`, com uma período de `7 dias` flexíveis (*grace period*) com `50 Gb` *adicionais*. 
 Pedidos justificados para aumento de quota podem ser feitos aos administradores do cluter.
 
 ## Submissão de jobs
