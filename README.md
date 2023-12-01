@@ -1,7 +1,6 @@
 `ver. 0.1`
 
-# Cluster “Chico Bento”
-# Manual do Usuário
+# Cluster “Chico Bento”: Manual do Usuário
 
 Prof. Dr. Alan Barros de Oliveira
 
@@ -17,7 +16,7 @@ Os dados de  `PORT`, `USERNAME` e `HOSTIP` são fornecidos diretamente ao usuár
 
 ## Definições
 
-O computador principal será denominado de `headnode` neste documento, enquanto dos secundários serão chamados de `nodes`.
+O computador principal será denominado de `headnode` neste documento, enquanto os secundários serão chamados de `nodes`.
 Estes últimos seguem o padrão de nomeclatura `cb01, cb02, ...`. Nos exemplos dados ao longo do texto, usamos `cb##` para denominar
 um `node` genérico.
 
