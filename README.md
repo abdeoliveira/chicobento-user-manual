@@ -1,13 +1,8 @@
-`ver. 0.1`
-
 # Cluster “Chico Bento”: Manual do Usuário
 
 Prof. Dr. Alan Barros de Oliveira
 
 Departamento de Física, Universidade Federal de Ouro Preto, Ouro Preto, MG, Ouro Preto, MG, Brasil. 35400-000.
-
-29 de novembro de 2023
-
 
 ## Conexão
 
