@@ -15,6 +15,16 @@ O computador principal será denominado de `headnode` neste documento, enquanto 
 Estes últimos seguem o padrão de nomeclatura `cb01, cb02, ...`. Nos exemplos dados ao longo do texto, usamos `cb##` para denominar
 um `node` genérico.
 
+## Visão Geral
+
+O comando `top-nodes` deve ser usado para se ter uma visão do estado do cluster.
+O número de *cores* listado refere-se aos cores reais 
+(desprezando os cores (Intel Hyper-Threading Technology)[https://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html]).
+
+Os `nodes` `cb01` e `cb02` possuem 16 cores reais, 
+mas 8 tem clock 4.9 GHz e 8 tem clock 3.6 GHz. Portanto, se você submeter 
+um job com 16 cores, a velocidade do processo será com base nos cores mais lentos. 
+
 ## Quota em disco
 
 Todos os usuários iniciam com uma cota em disco inicial de `100 Gb` para o `/home`, com uma período de `7 dias` flexíveis (*grace period*) com `50 Gb` *adicionais*. 
