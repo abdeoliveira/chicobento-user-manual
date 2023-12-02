@@ -40,8 +40,8 @@ no `headnode`.
 
 Mediante solicitação justificada aos administradores do cluster, qualquer usuário pode pedir a reserva de `nodes` 
 para si por um período de tempo determinado. Geralmente o pedido se justifica devido a prazos curtos para finalizações de 
-artigos, teses, dissertações etc. Unidades reservadas aparecerão com status `LOCKED` (username)` , onde `username` 
-é o nome de usuário a quem o `node` está reservado.
+artigos, teses, dissertações etc. Unidades reservadas aparecerão com status 
+`LOCKED (username)` , onde `username` é o nome de usuário a quem o `node` está reservado.
 
 ## Configurações avançadas (opcional)
 
