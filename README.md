@@ -19,7 +19,7 @@ um `node` genérico.
 
 O comando `top-nodes` deve ser usado para se ter uma visão do estado do cluster.
 O número de *cores* listado refere-se aos cores reais, 
-desprezando os cores [Intel Hyper-Threading Technology](https://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html]).
+desprezando os cores [Intel Hyper-Threading Technology](https://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html).
 
 Os `nodes` `cb01` e `cb02` possuem 16 cores reais, 
 mas 8 tem clock 4.9 GHz e 8 tem clock 3.6 GHz. Portanto, se você submeter 
