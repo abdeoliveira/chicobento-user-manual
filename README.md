@@ -17,17 +17,17 @@ um `node` genérico.
 
 ## Visão Geral
 
-O comando `top-nodes` deve ser usado para se ter uma visão do estado do cluster.
+O comando `top-nodes` pode ser usado para se ter uma visão do estado do cluster.
 O número de *cores* listado refere-se aos cores reais, 
 desprezando os cores [Intel Hyper-Threading Technology](https://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html).
 
 Os `nodes` `cb01` e `cb02` possuem 16 cores reais, 
-mas 8 tem clock 4.9 GHz e 8 tem clock 3.6 GHz. Portanto, se você submeter 
-um job com 16 cores, a velocidade do processo será com base nos cores mais lentos. 
+mas 8 tem clock 4,90 GHz e 8 tem clock 3,60 GHz. Portanto, jobs submetidos com 16 cores serão processados com base nos cores mais lentos. 
 
 ## Quota em disco
 
-Todos os usuários iniciam com uma cota em disco inicial de `100 Gb` para o `/home`, com uma período de `7 dias` flexíveis (*grace period*) com `50 Gb` *adicionais*. 
+Todos os usuários iniciam com uma cota em disco de `100 Gb` para o `/home`, 
+com `50 Gb` *adicionais* por um período de `7 dias` (*grace period*). 
 Pedidos justificados para aumento de quota podem ser feitos aos administradores do cluter.
 
 ## Submissão de jobs
@@ -38,13 +38,14 @@ Sugerimos os passos a seguir:
 1. No `headnode`, use o commando `top-nodes` para visualizar o estado geral do cluster.
 2. Conecte-se a um `node` livre, fazendo `ssh -p 1003 cb##`.
 3. Execute seus programas.
-4. Saia do `node` executando `exit` no terminal. Para conferir se seus jobs continuam rodando após logout do  `node`, execute `top-nodes cb##` 
-no `headnode`.
+4. Saia do `node` executando `exit` no terminal. Para conferir se seus jobs 
+continuam rodando após logout do  `node`, execute `top-nodes cb##` no `headnode`.
 
 ## Reserva de `nodes`
 
-Mediante solicitação justificada aos administradores do cluster, qualquer usuário pode pedir a reserva de `nodes` 
-para si por um período de tempo determinado. Geralmente o pedido se justifica devido a prazos curtos para finalizações de 
+Mediante solicitação justificada aos administradores do cluster, qualquer usuário 
+pode pedir a reserva de `nodes` para si por um período de tempo determinado. 
+Geralmente o pedido se justifica devido a prazos curtos para finalizações de 
 artigos, teses, dissertações etc. Unidades reservadas aparecerão com status 
 `LOCKED (username)` , onde `username` é o nome de usuário a quem o `node` está reservado.
 
@@ -63,18 +64,34 @@ Então você escreveria: `export SSHPASS_A='abcd'`.
 
 Você já deve ser capaz de se conectar aos `nodes` sem o prompt de senha, executando `connect-node cb##`. 
 
-### LAMMPS com otimizações da Intel
+### Versões do LAMMPS 
 
-No `Chico Bento` foi compilada uma versão otimizada para processadores Intel que, em testes preliminares, 
-mostrou-se entre 20 e 30% mais rápida do que a versão sem otimização. Para utilizá-la, siga os passos abaixo:
+#### Sem otimizações
 
-1. Copie o executável otimizado do LAMMPS que encontra-se em `/home/public/lmp_intel_cpu_intelmpi` para sua pasta de trabalho.
-2. Execute `source /opt/intel/oneapi/setvars.sh` para carregar as variáveis necessárias no sistema.
-3. Ao executar o LAMMPS, inclua a flag `-sf intel` na linha de comando. Por exemplo: `mpirun -np 8 ./lmp_intel_cpu_intelmpi -sf intel -in input`. 
+Uma versão 'padrão' do LAMMPS está disponível em `/home/public/LAMMPS/lmp_mpi`
 
-**OBS 1:** Caso se queira comparar esta versão otimizada com a versão "normal", esta última encontra-se em `/home/public/lmp_mpi`.
+#### Com otimizações 
 
-**OBS 2:** Mais detalhes sobre LAMMPS otimizado para processadores Intel podem ser obtidos em neste [link](https://docs.lammps.org/Speed_intel.html).
+##### Intel
 
+Uma versão otimizada para processadores Intel
+encontra-se em `/home/public/LAMMPS/lmp_intel_cpu_intelmpi` 
 
+Para utilizá-la:
+
+1. Execute `source /opt/intel/oneapi/setvars.sh` para carregar as variáveis 
+necessárias no sistema.
+2. Ao executar o LAMMPS, inclua a flag `-sf intel` na linha de comando. 
+Por exemplo: `mpirun -np 8 ./lmp_intel_cpu_intelmpi -in input -sf intel`. 
+
+Mais detalhes sobre LAMMPS otimizado para processadores Intel 
+podem ser obtidos em neste [link](https://docs.lammps.org/Speed_intel.html).
+
+##### OpenMP
+
+A escrever....
+
+#### Kokkos
+
+A escrever...
 
