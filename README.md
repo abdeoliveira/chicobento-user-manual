@@ -7,7 +7,7 @@ Departamento de Física, Universidade Federal de Ouro Preto, Ouro Preto, MG, Our
 ## Conexão
 
 A conexão é feita via ssh através de terminal, com o comando `ssh -p PORT USERNAME@HOSTIP`.
-Os dados de  `PORT`, `USERNAME` e `HOSTIP` são fornecidos diretamente ao usuário, justamente com a senha de acesso.
+Os dados de  `PORT`, `USERNAME` e `HOSTIP` são fornecidos diretamente ao usuário, juntamente com a senha de acesso.
 
 ## Definições
 
