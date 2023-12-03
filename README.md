@@ -89,9 +89,13 @@ podem ser obtidos em neste [link](https://docs.lammps.org/Speed_intel.html).
 
 ##### OpenMP
 
-A escrever....
+O pacote OpenMP foi criado por Axel Kohlmeyer na Universidade de Temple. 
+O executável do LAMMPS com este pacote encontra-se em `/home/public/LAMMPS/lmp_opm`
 
-#### Kokkos
+Para utilizá-lo:
 
-A escrever...
+1.  Ao executar o LAMMPS, inclua a flag `-sf omp` na linha de comando. 
+Por exemplo: `mpirun -np 8 ./lmp_intel_cpu_intelmpi -in input -sf omp`. 
+ 
+Para mais detalhes, visite a (página no LAMMPS)[https://docs.lammps.org/Speed_omp.html].
 
