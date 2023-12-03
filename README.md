@@ -95,7 +95,7 @@ O executável do LAMMPS com este pacote encontra-se em `/home/public/LAMMPS/lmp_
 Para utilizá-lo:
 
 1.  Ao executar o LAMMPS, inclua a flag `-sf omp` na linha de comando. 
-Por exemplo: `mpirun -np 8 ./lmp_intel_cpu_intelmpi -in input -sf omp`. 
+Por exemplo: `mpirun -np 8 ./lmp_omp -in input -sf omp`. 
  
 Para mais detalhes, visite a (página no LAMMPS)[https://docs.lammps.org/Speed_omp.html].
 
