@@ -97,5 +97,5 @@ Para utilizá-lo:
 1.  Ao executar o LAMMPS, inclua a flag `-sf omp` na linha de comando. 
 Por exemplo: `mpirun -np 8 ./lmp_omp -in input -sf omp`. 
  
-Para mais detalhes, visite a (página no LAMMPS)[https://docs.lammps.org/Speed_omp.html].
+Para mais detalhes, visite a [página no LAMMPS](https://docs.lammps.org/Speed_omp.html).
 
