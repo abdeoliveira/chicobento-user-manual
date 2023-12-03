@@ -90,7 +90,7 @@ podem ser obtidos em neste [link](https://docs.lammps.org/Speed_intel.html).
 ##### OpenMP
 
 O pacote OpenMP foi criado por Axel Kohlmeyer na Universidade de Temple. 
-O executável do LAMMPS com este pacote encontra-se em `/home/public/LAMMPS/lmp_opm`
+O executável do LAMMPS com este pacote encontra-se em `/home/public/LAMMPS/lmp_omp`
 
 Para utilizá-lo:
 
