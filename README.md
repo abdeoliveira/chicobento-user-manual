@@ -49,6 +49,10 @@ Geralmente o pedido se justifica devido a prazos curtos para finalizações de
 artigos, teses, dissertações etc. Unidades reservadas aparecerão com status 
 `LOCKED (username)` , onde `username` é o nome de usuário a quem o `node` está reservado.
 
+## Backups
+
+Não temos. Cada usuário é responsável pela segunrança dos seus dados.  
+
 ## Configurações avançadas (opcional)
 
 ### Conexão ssh sem senha entre `headnode` e `nodes`
