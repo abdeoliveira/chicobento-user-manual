@@ -72,7 +72,7 @@ Você já deve ser capaz de se conectar aos `nodes` sem o prompt de senha, execu
 
 #### Sem otimizações
 
-Uma versão 'padrão' do LAMMPS está disponível em `/home/public/LAMMPS/lmp_mpi`
+Uma versão 'padrão' do LAMMPS está disponível em `/home/public/LAMMPS/lmp_g++_mpich`
 
 #### Com otimizações 
 
