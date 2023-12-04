@@ -76,7 +76,8 @@ Uma versão 'padrão' do LAMMPS está disponível em `/home/public/LAMMPS/lmp_g+
 
 #### Com otimizações 
 
-##### Intel
+##### [Intel](https://docs.lammps.org/Speed_intel.html)
+
 
 Uma versão otimizada para processadores Intel
 encontra-se em `/home/public/LAMMPS/lmp_intel_cpu_intelmpi`.
@@ -88,10 +89,7 @@ necessárias no sistema.
 2. Ao executar o LAMMPS, inclua a flag `-sf intel` na linha de comando. 
 Por exemplo: `mpirun -np 8 ./lmp_intel_cpu_intelmpi -in input -sf intel`. 
 
-Mais detalhes sobre LAMMPS otimizado para processadores Intel 
-podem ser obtidos em neste [link](https://docs.lammps.org/Speed_intel.html).
-
-##### OpenMP
+##### [OpenMP](https://docs.lammps.org/Speed_omp.html)
 
 O pacote OpenMP foi criado por Axel Kohlmeyer na Universidade de Temple. 
 O executável do LAMMPS com este pacote encontra-se em `/home/public/LAMMPS/lmp_omp`.
@@ -101,5 +99,3 @@ Para utilizá-lo:
 1.  Ao executar o LAMMPS, inclua a flag `-sf omp` na linha de comando. 
 Por exemplo: `mpirun -np 8 ./lmp_omp -in input -sf omp`. 
  
-Para mais detalhes, visite a [página do LAMMPS](https://docs.lammps.org/Speed_omp.html).
-
