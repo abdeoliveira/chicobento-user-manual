@@ -70,7 +70,7 @@ Host cb*
     StrictHostKeyChecking=no
 ``` 
 
-Você já deve ser capaz de se conectar aos `nodes` sem o prompt de senha, 
+Você já deve ser capaz de se conectar aos `nodes` sem senha, 
 executando `ssh cb##`. 
 
 ### LAMMPS 
