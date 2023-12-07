@@ -67,6 +67,7 @@ Não temos. Cada usuário é responsável pela segunrança dos seus dados.
 ```
 Host cb*
     Port 1003
+    StrictHostKeyChecking=no
 ``` 
 
 Você já deve ser capaz de se conectar aos `nodes` sem o prompt de senha, 
