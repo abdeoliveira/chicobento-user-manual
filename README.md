@@ -57,7 +57,7 @@ Não temos. Cada usuário é responsável pela segunrança dos seus dados.
 
 ### Conexão ssh sem senha entre `headnode` e `nodes`
 
- Para configuração, siga os passos abaixo:
+Siga os passos abaixo:
 
 1. No `headnode`, execute `ssh-keygen`.
 2. Aperte `enter` para todas as perguntas (sem digitar nada).
