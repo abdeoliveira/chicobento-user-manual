@@ -59,9 +59,9 @@ Não temos. Cada usuário é responsável pela segunrança dos seus dados.
 
  Para configuração, siga os passos abaixo:
 
-1. No `headnode`, execute `ssh-keygen`
+1. No `headnode`, execute `ssh-keygen`.
 2. Aperte `enter` para todas as perguntas (sem digitar nada).
-3. Execute: `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
+3. Execute: `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`.
 4. Crie o arquivo `~/.ssh/config` e escreva nele:
 
 ```
