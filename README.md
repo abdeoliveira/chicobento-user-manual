@@ -102,7 +102,7 @@ Por exemplo: `mpirun -np 8 ./lmp_omp -in input -sf omp`.
 ### SIESTA
 
 
-#### Ver. 4.1 (Intel MKL)
+#### Ver. 4.1, Intel MPI, MKL (Blacs e Scalapack)
 
 Disponível em `/home/public/SIESTA/siesta_4.1_mpi_intel_mkl`.
 
