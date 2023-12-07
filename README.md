@@ -110,9 +110,10 @@ Para utilizá-la:
 
 1. Execute `source /opt/intel/oneapi/setvars.sh` para carregar as
 variáveis do sistema.
-2. Para execução em modo **paralelo**: 
+
+* Para execução em modo **paralelo**: 
 `mpirun -np 4 ./siesta_4.1_mpi_intel_mkl < input > output`.
-3. Para execução em modo **serial**: `./siesta_4.1_mpi_intel_mkl < input > output`.
+* Para execução em modo **serial**: `./siesta_4.1_mpi_intel_mkl < input > output`.
 
 
 
