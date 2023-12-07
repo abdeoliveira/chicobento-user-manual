@@ -102,7 +102,7 @@ Por exemplo: `mpirun -np 8 ./lmp_omp -in input -sf omp`.
 ### SIESTA
 
 
-#### Ver. 4.1: MPI e Intel MKL 
+#### Ver. 4.1 compilado com MPI e Intel MKL 
 
 Disponível em `/home/public/SIESTA/siesta_4.1_mpi_intel_mkl`.
 
@@ -110,9 +110,9 @@ Para utilizá-la:
 
 1. Execute `source /opt/intel/oneapi/setvars.sh` para carregar as
 variáveis do sistema.
-2. Para a versão paralela, execute: 
+2. Para execução em modo **paralelo**: 
 `mpirun -np 4 ./siesta_4.1_mpi_intel_mkl < input > output`.
-3. Para a versão serial, execute: `./siesta_4.1_mpi_intel_mkl < input > output`.
+3. Para execução em modo **serial**: `./siesta_4.1_mpi_intel_mkl < input > output`.
 
 
 
