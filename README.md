@@ -68,15 +68,15 @@ Então você escreveria: `export SSHPASS_A='abcd'`.
 
 Você já deve ser capaz de se conectar aos `nodes` sem o prompt de senha, executando `connect-node cb##`. 
 
-### Versões do LAMMPS 
+### LAMMPS 
 
-#### Sem otimizações
+#### Sem otimizações 
 
 Uma versão 'padrão' do LAMMPS está disponível em `/home/public/LAMMPS/lmp_g++_mpich`.
 
 #### Com otimizações 
 
-##### [Intel](https://docs.lammps.org/Speed_intel.html)
+##### [Intel](https://docs.lammps.org/Speed_intel.html) 
 
 
 Uma versão otimizada para processadores Intel
@@ -89,7 +89,7 @@ necessárias no sistema.
 2. Ao executar o LAMMPS, inclua a flag `-sf intel` na linha de comando. 
 Por exemplo: `mpirun -np 8 ./lmp_intel_cpu_intelmpi -in input -sf intel`. 
 
-##### [OpenMP](https://docs.lammps.org/Speed_omp.html)
+##### [OpenMP](https://docs.lammps.org/Speed_omp.html) 
 
 O pacote OpenMP foi criado por Axel Kohlmeyer na Universidade de Temple. 
 O executável do LAMMPS com este pacote encontra-se em `/home/public/LAMMPS/lmp_omp`.
@@ -99,3 +99,23 @@ Para utilizá-lo:
 1.  Ao executar o LAMMPS, inclua a flag `-sf omp` na linha de comando. 
 Por exemplo: `mpirun -np 8 ./lmp_omp -in input -sf omp`. 
  
+### SIESTA
+
+
+#### Ver. 4.1: MPI e Intel MKL 
+
+Disponível em `/home/public/SIESTA/siesta_4.1_mpi_intel_mkl`.
+
+Para utilizá-la: 
+
+1. Execute `source /opt/intel/oneapi/setvars.sh` para carregar as
+variáveis do sistema.
+2. Para a versão paralela, execute: 
+`mpirun -np 4 ./siesta_4.1_mpi_intel_mkl < input > output`.
+3. Para a versão serial, execute: `./siesta_4.1_mpi_intel_mkl < input > output`.
+
+
+
+
+
+
