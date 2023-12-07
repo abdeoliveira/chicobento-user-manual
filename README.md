@@ -57,16 +57,20 @@ Não temos. Cada usuário é responsável pela segunrança dos seus dados.
 
 ### Conexão ssh sem senha entre `headnode` e `nodes`
 
-É feita através do comando `connect-node`. Para configuração, siga os passos abaixo:
+ Para configuração, siga os passos abaixo:
 
-1. *No seu computador pessoal*, abra o arquivo `~/.bashrc` e, no final deste arquivo, adicione `export SSHPASS_A='parte_senha'`, onde `parte_senha` é uma parte da sua 
-senha de acesso ao cluster (as aspas fazem parte do comando e devem ser incluídas). Digamos que sua senha completa seja `abcd1234`. 
-Então você escreveria: `export SSHPASS_A='abcd'`. 
-2. Conecte-se ao `headnode`.
-3. No `headnode`, abra o arquivo `~/.bashrc` e adicione no final: `export SSHPASS_B='resto_senha'`. Seguindo nosso exemplo, você escreveria: `export SSHPASS_B='1234'`. 
-4. Finalmente, ainda no `master`, execute `source ~/.bashrc`.
+1. No `headnode`, execute `ssh-keygen`
+2. Aperte `enter` para todas as perguntas (sem digitar nada).
+3. Execute: `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
+4. Crie o arquivo `~/.ssh/config` e escreva nele:
 
-Você já deve ser capaz de se conectar aos `nodes` sem o prompt de senha, executando `connect-node cb##`. 
+```
+Host cb*
+    Port 1003
+``` 
+
+Você já deve ser capaz de se conectar aos `nodes` sem o prompt de senha, 
+executando `ssh cb##`. 
 
 ### LAMMPS 
 
@@ -114,9 +118,5 @@ variáveis do sistema.
 * Para execução em modo **paralelo**: 
 `mpirun -np 4 ./siesta_4.1_mpi_intel_mkl < input > output`.
 * Para execução em modo **serial**: `./siesta_4.1_mpi_intel_mkl < input > output`.
-
-
-
-
 
 
