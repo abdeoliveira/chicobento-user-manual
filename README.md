@@ -59,10 +59,10 @@ Não temos. Cada usuário é responsável pela segunrança dos seus dados.
 
 Siga os passos abaixo:
 
-1. No `headnode`, execute `ssh-keygen`.
-2. Aperte `enter` para todas as perguntas (sem digitar nada).
-3. Execute: `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`.
-4. Crie o arquivo `~/.ssh/config` e escreva nele:
+1. No `headnode`, execute `ssh-keygen` e 
+aperte `enter` para todas as perguntas (sem digitar nada).
+2. Execute: `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`.
+3. Crie o arquivo `~/.ssh/config` e escreva nele:
 
 ```
 Host cb*
@@ -72,6 +72,9 @@ Host cb*
 
 Você já deve ser capaz de se conectar aos `nodes` sem senha, 
 executando `ssh cb##`. 
+
+**OBS.:** Se você acha que esqueceu algum passo ou fez algo errado, basta
+fazer `rm -r ~/.ssh` no `headnode` e recomeçar.
 
 ### LAMMPS 
 
