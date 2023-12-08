@@ -73,7 +73,7 @@ Host cb*
 Você já deve ser capaz de se conectar aos `nodes` sem senha, 
 executando `ssh cb##`. 
 
-**OBS.:** Se você acha que esqueceu algum passo ou fez algo errado, basta
+**OBS.:** Se você achar que esqueceu algum passo ou fez algo de errado, basta
 fazer `rm -r ~/.ssh` no `headnode` e recomeçar.
 
 ### LAMMPS 
